@@ -1,0 +1,15 @@
+{
+  "name": "com.korstrix.playerprefs_extension",
+  "version": "1.0.0",
+  "displayName": "ZZ.PlayerPrefs Extension",
+  "description": "Unity에 내장된 PlayerPrefs의 기능을 추가한 라이브러리입니다",
+  "unity": "2018.1",
+  "keywords": [
+    "utility"
+  ],
+  "author": {
+    "name": "KorStrix",
+    "email": "korstrix@gmail.com",
+    "url": "https://github.com/KorStrix/Unity_PlayerPrefsExtension"
+  }
+}
