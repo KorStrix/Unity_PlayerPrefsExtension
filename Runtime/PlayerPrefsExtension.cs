@@ -11,8 +11,6 @@
 #endregion Header
 
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
 
@@ -84,6 +82,7 @@ namespace Unity_Pattern
             }
             catch
             {
+                // ignored
             }
         }
 
@@ -136,7 +135,7 @@ namespace Unity_Pattern
             string strJson = JsonUtility.ToJson(pSerializeObject);
             if (Check_IsInvalidJson(strJson))
             {
-                OnError?.Invoke($"{nameof(SetObject)} - ToJson() Fail - {strKey}-{pSerializeObject.ToString()}");
+                OnError?.Invoke($"{nameof(SetObject)} - ToJson() Fail - {strKey}-{pSerializeObject}");
 
                 return;
             }
@@ -149,7 +148,7 @@ namespace Unity_Pattern
             string strJson = JsonUtility.ToJson(pSerializeObject);
             if (Check_IsInvalidJson(strJson))
             {
-                OnError?.Invoke($"{nameof(SetObject)} - ToJson() Fail - {strKey}-{pSerializeObject.ToString()}");
+                OnError?.Invoke($"{nameof(SetObject)} - ToJson() Fail - {strKey}-{pSerializeObject}");
 
                 return;
             }
